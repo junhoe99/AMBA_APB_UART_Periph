@@ -11,41 +11,6 @@
 <img width="8684" height="6576" alt="image" src="https://github.com/user-attachments/assets/996c5946-ed40-40d0-a53c-e7ee9aa03524" />
 
 
-### **Project Structure**
-```
-📁AMBA_APB_UART_Periph/
-├── 📂sources_1/
-│   ├── 📂imports/sources_1/
-│   │   ├── 📂imports/new/           # RISC-V CPU Core
-│   │   │   ├── MCU.sv              # 🎯 Top-level MCU module
-│   │   │   ├── CPU_RV32I.sv        # RISC-V RV32I processor
-│   │   │   ├── ControlUnit.sv      # CPU control unit
-│   │   │   ├── DataPath.sv         # CPU datapath
-│   │   │   ├── ROM.sv              # Instruction memory
-│   │   │   ├── RAM.sv              # Data memory (APB slave)
-│   │   │   ├── defines.sv          # ISA definitions
-│   │   │   └── code.mem            # Program binary
-│   │   │
-│   │   └── 📂new/                  # APB Infrastructure
-│   │       ├── APB_Master.sv       # 🚌 APB bus controller
-│   │       ├── GPIO.sv             # Bidirectional I/O peripheral
-│   │       ├── GPO.sv              # Output-only peripheral
-│   │       ├── GPI.sv              # Input-only peripheral
-│   │       └── code_org.mem        # Original program
-│   │
-│   └── 📂new/                      # UART Components
-│       ├── uart_fifo_loopback.sv   # 📡 UART peripheral (APB slave)
-│       ├── uart.sv                 # Core UART module
-│       └── code_sim.mem            # Simulation program
-│
-├── 📂sim_1/new/                    # Testbenches
-│   ├── tb_uart_periph_final.sv     # 🧪 Advanced OOP testbench
-│   └── tb_UART_APB_Simple.sv       # Simple UART test
-│
-└── 📂constrs_1/new/
-    └── xdc.xdc                      # 🎛️ FPGA constraints (Basys3)
-```
-
 ## 🎯 Key Features
 
 ### 🏛️ System Integration
@@ -87,6 +52,9 @@
 - **Dedicated Input**: Switch/button reading
 
 ## 🗺️ Memory Map
+
+<img width="2800" height="6360" alt="image" src="https://github.com/user-attachments/assets/0e7b16b1-c784-4e36-9a72-7852d8c8bbd2" />
+
 
 | **Address Range** | **Peripheral** | **Size** | **Description** |
 |-------------------|----------------|----------|-----------------|
