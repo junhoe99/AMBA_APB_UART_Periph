@@ -10,6 +10,22 @@
 
 <img width="8684" height="6576" alt="image" src="https://github.com/user-attachments/assets/996c5946-ed40-40d0-a53c-e7ee9aa03524" />
 
+> 📌 **Architecture Highlights:**
+> - **MCU Top Module**: RISC-V CPU, APB Master, 5 Peripherals 통합
+> - **Memory Subsystem**: Harvard architecture (ROM/RAM 분리)
+> - **Bus Infrastructure**: AMBA APB protocol-based interconnect
+> - **Peripheral Integration**: GPIO/UART with Memory-Mapped I/O
+
+
+
+### GPIO Periph.
+<img width="11532" height="7296" alt="image" src="https://github.com/user-attachments/assets/e9c67fae-fbf8-4fa1-a34f-aba4709f133c" />
+
+
+### UART Periph.
+<img width="14028" height="7272" alt="image" src="https://github.com/user-attachments/assets/badd907f-6a59-438d-8e8f-d77e54c0fe60" />
+
+
 
 ## 🎯 Key Features
 
@@ -56,6 +72,14 @@
 <img width="2800" height="6360" alt="image" src="https://github.com/user-attachments/assets/0e7b16b1-c784-4e36-9a72-7852d8c8bbd2" />
 
 
+> 📌 **Address Space Organization:**
+> - **Base Address**: 0x1000_0000
+> - **Address Decoding**: APB_Master의 12-bit offset 기반 자동 디코딩
+> - **Peripheral Selection**: PSEL 신호를 통한 개별 peripheral 활성화
+> - **Register Alignment**: 4-byte aligned access
+
+### **Address Space Allocation**
+
 | **Address Range** | **Peripheral** | **Size** | **Description** |
 |-------------------|----------------|----------|-----------------|
 | `0x1000_0xxx` | RAM | 4KB | Data memory (APB accessible) |
@@ -78,6 +102,7 @@
 | `0x00` | CR | R/W | Control Register (direction: 1=output, 0=input) |
 | `0x04` | ODR | R/W | Output Data Register |
 | `0x08` | IDR | RO | Input Data Register |
+
 
 ## 🔧 Configuration
 
