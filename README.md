@@ -115,10 +115,9 @@
 - **🎯 Reset Type**: Synchronous reset (active high)
 
 ### 🔌 APB Configuration
-- **Protocol**: AMBA APB (ARM IHI 0024C)
+- **Protocol**: AMBA APB
 - **Address Decode**: Base address + 12-bit offset
 - **Wait States**: Slave-controlled via PREADY
-- **Error Handling**: Basic ready signal timeout
 
 ### 📡 UART Configuration
 - **Baud Rate**: 9600 bps (100MHz clock)
@@ -191,22 +190,10 @@ run -all
 - **⚡ System Clock**: 100MHz
 - **🚌 APB Throughput**: 1 transaction per 3 clock cycles (minimum)
 - **📡 UART Data Rate**: 9600 baud (960 bytes/sec)
-- **🎯 CPU Performance**: 1 IPC (Instructions Per Cycle) - single cycle
-- **💾 Memory Latency**: 1 cycle (RAM/ROM)
+- **🎯 CPU Performance**: Multi Cycle
+- **💾 Memory Structure**: Harvard Structure (Seperated ROM, RAM) 
 - **🔄 APB Latency**: 2 cycles minimum (SETUP + ACCESS)
 
-## 🎛️ Hardware Support
-
-### Basys3 FPGA Pin Mapping
-- **Clock**: 100MHz system clock (W5)
-- **Reset**: Button (U18)
-- **GPIO**: 
-  - GPO: LEDs (U16-E19)
-  - GPI: Switches (V17-R2)
-  - GPIO: JB PMOD (A14-B16)
-- **UART**:
-  - TX: JA1 (J1)
-  - RX: JA2 (L2)
 
 ## 🔧 Design Highlights
 
