@@ -111,7 +111,7 @@
 ### ⚙️ System Specification
 - **⏰ Clock Frequency**: 100MHz
 - **📡 UART Data Rate**: 9600 baud (960 bytes/sec)
-- **🎯 CPU Performance**: Multi Cycle
+- **🎯 CPU Performance**: Multi Cycle( IF -> ID -> EXE -> MEM -> WB )
 - **📊 Data Width**: 32-bit APB bus
 - **💾 Address Width**: 32-bit
 - **🎯 Reset Type**: Synchronous reset (active high)
