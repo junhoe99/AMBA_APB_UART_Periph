@@ -106,13 +106,16 @@
 | `0x08` | IDR | RO | Input Data Register |
 
 
-## 🔧 Configuration
+## 🔧 Design Configuration
 
-### ⚙️ System Parameters
+### ⚙️ System Specification
 - **⏰ Clock Frequency**: 100MHz
+- **📡 UART Data Rate**: 9600 baud (960 bytes/sec)
+- **🎯 CPU Performance**: Multi Cycle
 - **📊 Data Width**: 32-bit APB bus
 - **💾 Address Width**: 32-bit
 - **🎯 Reset Type**: Synchronous reset (active high)
+- **💾 Memory Structure**: Harvard Structure (Seperated ROM, RAM) 
 
 ### 🔌 APB Configuration
 - **Protocol**: AMBA APB
@@ -125,6 +128,8 @@
 - **Stop Bits**: 1
 - **Parity**: None
 - **Flow Control**: None
+  
+
 
 ## 🧪 Testing & Verification
 
@@ -184,16 +189,6 @@ run -all
 # Generate Bitstream
 # Program Device
 ```
-
-## 📈 Performance Specifications
-
-- **⚡ System Clock**: 100MHz
-- **🚌 APB Throughput**: 1 transaction per 3 clock cycles (minimum)
-- **📡 UART Data Rate**: 9600 baud (960 bytes/sec)
-- **🎯 CPU Performance**: Multi Cycle
-- **💾 Memory Structure**: Harvard Structure (Seperated ROM, RAM) 
-- **🔄 APB Latency**: 2 cycles minimum (SETUP + ACCESS)
-
 
 ## 🔧 Design Highlights
 
