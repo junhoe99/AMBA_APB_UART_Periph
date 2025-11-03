@@ -88,7 +88,7 @@
 | `0x1000_1xxx` | GPO | 4KB | General Purpose Output |
 | `0x1000_2xxx` | GPI | 4KB | General Purpose Input |
 | `0x1000_3xxx` | GPIO | 4KB | Bidirectional GPIO |
-| `0x1000_4xxx` | UART | 4KB | Serial communication |
+| `0x1000_4xxx` | UART | 4KB | Serial communication(Loopback) |
 
 ### **UART Register Map**
 | **Offset** | **Register** | **Access** | **Description** |
