@@ -19,11 +19,13 @@
 
 
 ### GPIO Periph.
-<img width="11532" height="7296" alt="image" src="https://github.com/user-attachments/assets/e9c67fae-fbf8-4fa1-a34f-aba4709f133c" />
+<img width="11532" height="7296" alt="image" src="https://github.com/user-attachments/assets/4d110a34-2237-4091-bb99-a9668d757f9f" />
+
 
 
 ### UART Periph.
-<img width="14028" height="7272" alt="image" src="https://github.com/user-attachments/assets/badd907f-6a59-438d-8e8f-d77e54c0fe60" />
+<img width="14028" height="7272" alt="image" src="https://github.com/user-attachments/assets/20c8fea5-b948-4833-b44a-f5becaf62fb9" />
+
 
 
 
