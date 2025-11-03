@@ -7,9 +7,9 @@
 ## 🏗️ System Architecture
 
 ### **High-Level Block Diagram**
-```
+
 <img width="8684" height="6576" alt="image" src="https://github.com/user-attachments/assets/996c5946-ed40-40d0-a53c-e7ee9aa03524" />
-```
+
 
 ### **Project Structure**
 ```
