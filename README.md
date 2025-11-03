@@ -71,7 +71,7 @@
 
 ## 🗺️ Memory Map
 
-<img width="120" height="360" alt="image" src="https://github.com/user-attachments/assets/0e7b16b1-c784-4e36-9a72-7852d8c8bbd2" />
+<img width="900" height="2700" alt="image" src="https://github.com/user-attachments/assets/0e7b16b1-c784-4e36-9a72-7852d8c8bbd2" />
 
 
 > 📌 **Address Space Organization:**
